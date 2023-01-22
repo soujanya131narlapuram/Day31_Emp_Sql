@@ -26,3 +26,7 @@ where name = "Ashok";
 
 select * from employee_payroll
 where start between cast('2022-08-01' as date)  and date(now());
+
+--Uc6
+alter table employee_payroll add gender varchar(10) after name;
+desc employee_payroll;
