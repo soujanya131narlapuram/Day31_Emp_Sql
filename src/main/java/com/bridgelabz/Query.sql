@@ -37,3 +37,15 @@ SELECT min(salary) from employee_payroll;
 SELECT avg(salary) from employee_payroll;
 SELECT sum(salary) from employee_payroll;
 select count(*) from employee_payroll  where gender = "Male";
+
+--UC8
+alter table employee_payroll
+add column phone varchar(30) NOT NULL;
+
+alter table employee_payroll
+add column department varchar(30) NOT NULL;
+
+alter table employee_payroll
+add column address varchar(30) NOT NULL default "Bangalore";
+
+desc employee_payroll;
