@@ -30,3 +30,10 @@ where start between cast('2022-08-01' as date)  and date(now());
 --Uc6
 alter table employee_payroll add gender varchar(10) after name;
 desc employee_payroll ;
+
+--UC7
+SELECT max(salary) from employee_payroll;
+SELECT min(salary) from employee_payroll;
+SELECT avg(salary) from employee_payroll;
+SELECT sum(salary) from employee_payroll;
+select count(*) from employee_payroll  where gender = "Male";
