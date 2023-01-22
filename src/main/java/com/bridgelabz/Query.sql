@@ -1,9 +1,7 @@
-show databases;
 use payroll_service;
-create table employee_payroll(
-id INT unsigned NOT NULL auto_increment,
-name varchar(150) not null,
-salary double not null,
-start date not null,
-primary key(id)
-);
+insert into employee_payroll(name,salary,start)
+values("Soujanya",6000000.0,'2021-10-22'),
+("Ashok",10000000.0,'2019-01-22'),
+("Sravan",9000000.0,'2022-10-22'),
+("Emp4",500000.0,'2011-02-20');
+Select * from employee_payroll;
